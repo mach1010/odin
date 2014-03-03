@@ -1,0 +1,37 @@
+body {
+	margin:0;
+	padding:0;
+}
+#nav {
+	height:20px;
+	padding:10px;
+	text-align:center;
+	background-color:#666;
+	color:white;
+}
+.wrapper {
+}
+.grid {
+	display:table;
+	margin:0 auto;
+}
+
+.gray {
+	background-color:#efefef;
+}
+
+.dot {
+	height:3px;
+	width:3px;
+	background-color:#aaa;
+/*	margin:0.1px;*/
+	float:left;
+}
+
+.begin {
+	clear:left;
+}
+
+.dot_on {
+	background-color:#666;
+}
