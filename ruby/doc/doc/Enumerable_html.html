@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Enumerable.html - RDoc Documentation</title>
+
+<link href="../fonts.css" rel="stylesheet">
+<link href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search_index.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/searcher.js"></script>
+<script src="../js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../doc/Dungeon_html.html">Dungeon.html</a>
+  
+    <li><a href="../doc/Dungeon/Room_html.html">Room.html</a>
+  
+    <li><a href="../doc/Enumerable_html.html">Enumerable.html</a>
+  
+    <li><a href="../doc/Object_html.html">Object.html</a>
+  
+    <li><a href="../doc/String_html.html">String.html</a>
+  
+    <li><a href="../doc/fonts_css.html">fonts.css</a>
+  
+    <li><a href="../doc/index_html.html">index.html</a>
+  
+    <li><a href="../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li><a href="../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li><a href="../doc/js/search_js.html">search.js</a>
+  
+    <li><a href="../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li><a href="../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li><a href="../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li><a href="../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page doc/Enumerable.html">
+
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p>&lt;html&gt; &lt;head&gt; &lt;meta charset=“UTF-8”&gt;</p>
+
+<p>&lt;title&gt;module <a href="../Enumerable.html">Enumerable</a> - RDoc
+Documentation&lt;/title&gt;</p>
+
+<p>&lt;link href=“./fonts.css” rel=“stylesheet”&gt; &lt;link href=“./rdoc.css”
+rel=“stylesheet”&gt;</p>
+
+<p>&lt;script type=“text/javascript”&gt;</p>
+
+<pre>var rdoc_rel_prefix = &quot;./&quot;;</pre>
+
+<p>&lt;/script&gt;</p>
+
+<p>&lt;script src=“./js/jquery.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/navigation.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/search_index.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/search.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/searcher.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/darkfish.js”&gt;&lt;/script&gt;</p>
+
+<p>&lt;body id=“top” role=“document” class=“module”&gt; &lt;nav
+role=“navigation”&gt;</p>
+
+<pre>&lt;div id=&quot;project-navigation&quot;&gt;
+  &lt;div id=&quot;home-section&quot; role=&quot;region&quot; title=&quot;Quick navigation&quot; class=&quot;nav-section&quot;&gt;
+&lt;h2&gt;
+  &lt;a href=&quot;./index.html&quot; rel=&quot;home&quot;&gt;Home&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;div id=&quot;table-of-contents-navigation&quot;&gt;
+  &lt;a href=&quot;./table_of_contents.html#pages&quot;&gt;Pages&lt;/a&gt;
+  &lt;a href=&quot;./table_of_contents.html#classes&quot;&gt;Classes&lt;/a&gt;
+  &lt;a href=&quot;./table_of_contents.html#methods&quot;&gt;Methods&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+<p>&lt;/div&gt;</p>
+
+<pre>  &lt;div id=&quot;search-section&quot; role=&quot;search&quot; class=&quot;project-section initially-hidden&quot;&gt;
+&lt;form action=&quot;#&quot; method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;
+  &lt;div id=&quot;search-field-wrapper&quot;&gt;
+    &lt;input id=&quot;search-field&quot; role=&quot;combobox&quot; aria-label=&quot;Search&quot;
+           aria-autocomplete=&quot;list&quot; aria-controls=&quot;search-results&quot;
+           type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot; spellcheck=&quot;false&quot;
+           title=&quot;Type to search, Up and Down to navigate, Enter to load&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;ul id=&quot;search-results&quot; aria-label=&quot;Search Results&quot;
+      aria-busy=&quot;false&quot; aria-expanded=&quot;false&quot;
+      aria-atomic=&quot;false&quot; class=&quot;initially-hidden&quot;&gt;&lt;/ul&gt;
+&lt;/form&gt;</pre>
+
+<p>&lt;/div&gt;</p>
+
+<pre>&lt;/div&gt;
+
+&lt;div id=&quot;class-metadata&quot;&gt;
+
+  &lt;!-- Method Quickref --&gt;</pre>
+
+<p>&lt;div id=“method-list-section” class=“nav-section”&gt;</p>
+
+<pre>&lt;h3&gt;Methods&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot; role=&quot;directory&quot;&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_all-3F&quot;&gt;#my_all?&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_any-3F&quot;&gt;#my_any?&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_count&quot;&gt;#my_count&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_each&quot;&gt;#my_each&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_each_with_index&quot;&gt;#my_each_with_index&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_inject&quot;&gt;#my_inject&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_map&quot;&gt;#my_map&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_none-3F&quot;&gt;#my_none?&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-my_select&quot;&gt;#my_select&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/div&gt;</p>
+
+<pre>&lt;/div&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<p>&lt;main role=“main” aria-labelledby=“module-Enumerable”&gt;</p>
+
+<pre class="ruby"><span class="ruby-operator">&lt;</span><span class="ruby-identifier">h1</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;module-Enumerable&quot;</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;module&quot;</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-keyword">module</span> <span class="ruby-constant">Enumerable</span>
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/h1&gt;
+
+&lt;section class=&quot;description&quot;&gt;
+
+&lt;/se</span><span class="ruby-identifier">ction</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-identifier">section</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;5Buntitled-5D&quot;</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;documentation-section&quot;</span><span class="ruby-operator">&gt;</span>
+
+   <span class="ruby-operator">&lt;</span><span class="ruby-identifier">section</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;public-instance-5Buntitled-5D-method-details&quot;</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-section&quot;</span><span class="ruby-operator">&gt;</span>
+     <span class="ruby-operator">&lt;</span><span class="ruby-identifier">header</span><span class="ruby-operator">&gt;</span>
+       <span class="ruby-operator">&lt;</span><span class="ruby-identifier">h3</span><span class="ruby-operator">&gt;</span><span class="ruby-constant">Public</span> <span class="ruby-constant">Instance</span> <span class="ruby-constant">Methods</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/h3&gt;
+     &lt;/</span><span class="ruby-identifier">header</span><span class="ruby-operator">&gt;</span>
+
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;method-i-my_all-3F&quot;</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-detail &quot;</span><span class="ruby-operator">&gt;</span>
+
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-heading&quot;</span><span class="ruby-operator">&gt;</span>
+        <span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-name&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">my_all?</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;&lt;span
+          class=&quot;method-args&quot;&gt;() { |x| ... }&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+        <span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-click-advice&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">click</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">toggle</span> <span class="ruby-identifier">source</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+      &lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span>
+
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-description&quot;</span><span class="ruby-operator">&gt;</span>
+
+        <span class="ruby-operator">&lt;</span><span class="ruby-identifier">p</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">my</span> <span class="ruby-identifier">version</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">all?</span><span class="ruby-operator">&lt;</span><span class="ruby-node">/p&gt;
+
+        &lt;div class=&quot;method-source-code&quot; id=&quot;my_all-3F-source&quot;&gt;
+          &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File extend_enum.rb, line 33&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_all?&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;my_each&lt;/span&gt; {&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;yield&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;true&lt;/span&gt;}
+&lt;span class=&quot;ruby-keyword&quot;&gt;true&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre class="ruby">    <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+&lt;div id=&quot;method-i-my_any-3F&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;my_any?&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span>
+      <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-args&quot;</span><span class="ruby-operator">&gt;</span>() { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-operator">...</span> }<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;my version of any?&lt;/</span><span class="ruby-identifier">p</span><span class="ruby-operator">&gt;</span>
+
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-source-code&quot;</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;my_any-3F-source&quot;</span><span class="ruby-operator">&gt;</span>
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">pre</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;ruby-comment&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-comment"># File extend_enum.rb, line 39&lt;/span&gt;</span>
+</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_any?&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;my_each&lt;/span&gt; {&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;yield&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;true&lt;/span&gt;}
+&lt;span class=&quot;ruby-keyword&quot;&gt;false&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;method-i-my_count&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;my_count&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;my version of count&lt;/p&gt;
+
+    &lt;div class=&quot;method-source-code&quot; id=&quot;my_count-source&quot;&gt;
+      &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File extend_enum.rb, line 51&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_count&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt; = &lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;my_each&lt;/span&gt; {&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;}
+&lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre class="ruby">    <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+&lt;div id=&quot;method-i-my_each&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;my_each&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span>
+      <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-args&quot;</span><span class="ruby-operator">&gt;</span>() { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-operator">...</span> }<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;my version of each&lt;/</span><span class="ruby-identifier">p</span><span class="ruby-operator">&gt;</span>
+
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-source-code&quot;</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;my_each-source&quot;</span><span class="ruby-operator">&gt;</span>
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">pre</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;ruby-comment&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-comment"># File extend_enum.rb, line 3&lt;/span&gt;</span>
+</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_each&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-comment&quot;&gt;# i = 0&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;# while i &amp;lt; self.length&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#   yield self[i]&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#   i += 1&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;# end&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;# self&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;
+  &lt;span class=&quot;ruby-keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre class="ruby">    <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+&lt;div id=&quot;method-i-my_each_with_index&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;my_each_with_index&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span>
+      <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-args&quot;</span><span class="ruby-operator">&gt;</span>() { <span class="ruby-operator">|</span><span class="ruby-keyword">self</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-operator">...</span> }<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;my version of each with index&lt;/</span><span class="ruby-identifier">p</span><span class="ruby-operator">&gt;</span>
+
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-source-code&quot;</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;my_each_with_index-source&quot;</span><span class="ruby-operator">&gt;</span>
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">pre</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;ruby-comment&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-comment"># File extend_enum.rb, line 16&lt;/span&gt;</span>
+</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_each_with_index&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt; = &lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;length&lt;/span&gt;
+  &lt;span class=&quot;ruby-keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;[&lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt;], &lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt;
+  &lt;span class=&quot;ruby-identifier&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre class="ruby">    <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+&lt;div id=&quot;method-i-my_inject&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;my_inject&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span>
+      <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-args&quot;</span><span class="ruby-operator">&gt;</span>(<span class="ruby-identifier">memo</span> = <span class="ruby-value">0</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">sum</span>, <span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-operator">...</span> }<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;my version of inject&lt;/</span><span class="ruby-identifier">p</span><span class="ruby-operator">&gt;</span>
+
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-source-code&quot;</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;my_inject-source&quot;</span><span class="ruby-operator">&gt;</span>
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">pre</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;ruby-comment&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-comment"># File extend_enum.rb, line 65&lt;/span&gt;</span>
+</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_inject&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;memo&lt;/span&gt; = &lt;span
+class=“ruby-value”&gt;0&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;sum&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;memo&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;my_each&lt;/span&gt; {&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;sum&lt;/span&gt; = &lt;span class=&quot;ruby-keyword&quot;&gt;yield&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;sum&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;v&lt;/span&gt;) } 
+&lt;span class=&quot;ruby-identifier&quot;&gt;sum&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre class="ruby">    <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+&lt;div id=&quot;method-i-my_map&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;my_map&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span>
+      <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-args&quot;</span><span class="ruby-operator">&gt;</span>() { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-operator">...</span> }<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;my version of map&lt;/</span><span class="ruby-identifier">p</span><span class="ruby-operator">&gt;</span>
+
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-source-code&quot;</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;my_map-source&quot;</span><span class="ruby-operator">&gt;</span>
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">pre</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;ruby-comment&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-comment"># File extend_enum.rb, line 58&lt;/span&gt;</span>
+</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_map&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;arr&lt;/span&gt; = []
+&lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;my_each&lt;/span&gt; {&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;yield&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;)}
+&lt;span class=&quot;ruby-identifier&quot;&gt;arr&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre class="ruby">    <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+&lt;div id=&quot;method-i-my_none-3F&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;my_none?&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span>
+      <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-args&quot;</span><span class="ruby-operator">&gt;</span>() { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-operator">...</span> }<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;my version of none?&lt;/</span><span class="ruby-identifier">p</span><span class="ruby-operator">&gt;</span>
+
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-source-code&quot;</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;my_none-3F-source&quot;</span><span class="ruby-operator">&gt;</span>
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">pre</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;ruby-comment&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-comment"># File extend_enum.rb, line 45&lt;/span&gt;</span>
+</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_none?&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;my_each&lt;/span&gt; {&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;yield&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;true&lt;/span&gt;}
+&lt;span class=&quot;ruby-keyword&quot;&gt;true&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre class="ruby">    <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+&lt;div id=&quot;method-i-my_select&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;my_select&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span>
+      <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-args&quot;</span><span class="ruby-operator">&gt;</span>() { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-operator">...</span> }<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/s</span><span class="ruby-identifier">pan</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;my version of select&lt;/</span><span class="ruby-identifier">p</span><span class="ruby-operator">&gt;</span>
+
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">div</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;method-source-code&quot;</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;my_select-source&quot;</span><span class="ruby-operator">&gt;</span>
+      <span class="ruby-operator">&lt;</span><span class="ruby-identifier">pre</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">span</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;ruby-comment&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-comment"># File extend_enum.rb, line 26&lt;/span&gt;</span>
+</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;my_select&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;arr&lt;/span&gt; = []
+&lt;span class=&quot;ruby-keyword&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;my_each&lt;/span&gt; {&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;x&lt;/span&gt;}
+&lt;span class=&quot;ruby-identifier&quot;&gt;arr&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/section&gt;
+
+&lt;/section&gt;</pre>
+
+<p>&lt;/main&gt;</p>
+
+<p>&lt;footer id=“validator-badges” role=“contentinfo”&gt;</p>
+
+<pre>&lt;p&gt;&lt;a href=&quot;http://validator.w3.org/check/referer&quot;&gt;Validate&lt;/a&gt;
+&lt;p&gt;Generated by &lt;a href=&quot;http://rdoc.rubyforge.org&quot;&gt;RDoc&lt;/a&gt; 4.1.1.
+&lt;p&gt;Based on &lt;a href=&quot;http://deveiate.org/projects/Darkfish-Rdoc/&quot;&gt;Darkfish&lt;/a&gt; by &lt;a href=&quot;http://deveiate.org&quot;&gt;Michael Granger&lt;/a&gt;.</pre>
+
+<p>&lt;/footer&gt;</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
