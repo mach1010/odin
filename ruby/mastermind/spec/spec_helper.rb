@@ -1,1 +1,1 @@
-require_relative "../lib/mastermind.rb"
+require_relative '../lib/mastermind.rb'
