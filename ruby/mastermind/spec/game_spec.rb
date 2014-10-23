@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module Mastermind
   xdescribe Game do
-    xcontext '#initialize game' do
+    context '#initialize game' do
       xit 'should greet player and ask their name' do
       end
       xit 'should get desired role from player (codemaker or breaker)' do
@@ -15,10 +15,10 @@ module Mastermind
       end
     end
     
-    xcontext 'gameplay with player as codebreaker' do
+    context 'gameplay with player as codebreaker' do
     end
     
-    xcontext 'gameplay with player as codemaker' do
+    context 'gameplay with player as codemaker' do
     end
   end
 end
