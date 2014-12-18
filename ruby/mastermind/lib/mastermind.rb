@@ -5,5 +5,7 @@ require_relative 'mastermind/game'
 
 # Mastermind module contains the codebase for the mastermind game
 module Mastermind
-  # Your code goes here...
+  game = Game.new
+  game.start
+  game.play
 end
