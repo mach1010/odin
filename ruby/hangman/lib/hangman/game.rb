@@ -13,9 +13,8 @@ class Game
     puts "You have to guess a hidden word before you're hung!"
     puts "You can guess a letter or the whole word on any turn."
     puts "10 incorrect guesses loses the game."
-    puts "Press enter to begin, good luck!"
-    gets
-    play
+    puts "Press enter to begin or load to load saved game. Good luck!"
+    gets.chomp.downcase == 'load' ? Game.load : play
   end
   
   def play
@@ -42,7 +41,7 @@ class Game
   private
   
     def check_guess
-      puts "guess a letter or the entire word:"
+      puts "guess a letter or the entire word: ('save' to save and quit)"
       @guess = gets.chomp.downcase
       if @guess.length > 1 && win?
         won
@@ -56,7 +55,9 @@ class Game
     end 
     
     def process_guess
-      if @word_array.delete(@guess)
+      if @guess == 'save'
+        save
+      elsif @word_array.delete(@guess)
         @correct << @guess
         @game_word.update_hidden_word(@guess)
       else 
@@ -103,6 +104,8 @@ class Game
                   ['__|__________']
                 ]
       
+      # each hangman array position == # misses
+      # string is gallows indices to use for that # misses
       hangman = [ '00000000', '00100000', '00111000', '00121000', '00122000', 
                   '00132000', '00133000', '00133100', '00133110', '00133210',  
                   '00133220']
@@ -111,5 +114,16 @@ class Game
         puts e[hangman[index][i].to_i]
       end  
       puts ''              
+    end
+    
+    def save
+      File.open('hangman_save.txt', 'w') {|f| f << YAML.dump(self)}
+      puts 'Thanks for playing!'
+      exit
+    end
+    
+    def self.load
+      game = YAML.load(File.read('hangman_save.txt'))
+      game.play
     end
 end

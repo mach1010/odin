@@ -1,0 +1,27 @@
+--- !ruby/object:Game
+game_word: !ruby/object:Words
+  word: sideman
+  word_array:
+  - s
+  - i
+  - d
+  - e
+  - m
+  - a
+  - n
+  word_hidden: si_eman
+word_array:
+- d
+guess: save
+incorrect:
+- r
+- t
+- o
+- c
+correct:
+- a
+- i
+- e
+- n
+- s
+- m
