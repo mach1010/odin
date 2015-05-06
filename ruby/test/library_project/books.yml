@@ -1,0 +1,13 @@
+---
+- !ruby/object:Book
+  title: Money Talks, Bullshit Walks
+  author: Sammy
+  category: :cool
+- !ruby/object:Book
+  title: The Singularity is Near
+  author: Kurzwiel
+  category: :futurist
+- !ruby/object:Book
+  title: People are stupid and so am I
+  author: Me
+  category: :cool
