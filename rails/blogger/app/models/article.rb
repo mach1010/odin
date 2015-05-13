@@ -1,4 +1,5 @@
 class Article < ActiveRecord::Base
+  belongs_to :author
   has_many :comments
   has_many :taggings
   has_many :tags, through: :taggings
@@ -6,6 +7,7 @@ class Article < ActiveRecord::Base
   
   validates_attachment_content_type :image, content_type: 
     ["image/jpg", "image/jpeg", "image/png"]
+  validates :author_id, presence: true
   
   def tag_list
     self.tags.collect do |tag|

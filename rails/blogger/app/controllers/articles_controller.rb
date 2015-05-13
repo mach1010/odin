@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   include ArticlesHelper
   before_filter :require_login, except: [:index, :show]
+
   
   def index
     @articles = Article.all
@@ -18,6 +19,7 @@ class ArticlesController < ApplicationController
   
   def create
     @article = Article.new(article_params)
+    @article.author_id = current_user.id
     if @article.save
       flash.notice = "#{@article.title} created!"
       redirect_to article_path(@article)
@@ -28,13 +30,22 @@ class ArticlesController < ApplicationController
   
   def edit
     @article = Article.find(params[:id])
+    unless @article.author_id == current_user.id
+      flash.notice = "you may only edit your own articles"
+      redirect_to @article
+    end
   end
   
   def update
     @article = Article.find(params[:id])
-    @article.update(article_params)
-    flash.notice = "#{@article.title} updated!"
-    redirect_to @article
+    if @article.author_id == current_user.id
+      @article.update(article_params)
+      flash.notice = "#{@article.title} updated!"
+      redirect_to @article
+    else
+      flash.notice = "you may only edit your own articles"
+      redirect_to @article
+    end
   end
   
   def destroy

@@ -9,6 +9,15 @@
   <strong>Email:</strong>
   <%= @author.email %>
 </p>
+<br>
+<h3>Posts</h3>
+<p>
+  <ul>
+    <% @author.articles.each do |article| %>
+    <li><%= link_to article.title, article %></li>
+    <% end %>
+  </ul>
+</p>
 
 <%= link_to 'Edit', edit_author_path(@author) %> |
 <%= link_to 'Back', authors_path %>
